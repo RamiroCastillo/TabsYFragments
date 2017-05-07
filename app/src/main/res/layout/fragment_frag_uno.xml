@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="remmcal_apps.tabsfragments.FragUno">
+
+    <!-- Aqui va todo el diseño del Fragment -->
+    <!--Aqui diseño mi fragment como si fuera un activity -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Contenido del Fragment Uno" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_gdg_2017"
+
+        android:id="@+id/iv1"/>
+
+    <!-- Voy a aplicar este fragment en el tab1 de mi activity_main -->
+
+
+
+</LinearLayout>

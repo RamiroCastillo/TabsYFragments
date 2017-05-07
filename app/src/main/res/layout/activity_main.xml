@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="remmcal_apps.tabsfragments.MainActivity">
+    <!--Cambiamos el view group a LinearLayout para tenerlo mas ordenado-->
+
+
+
+    <!-- A partir de aqui empieza la estructura del TabLayout -->
+    <TabHost
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@android:id/tabhost">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                    <TabWidget
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@android:id/tabs"/>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@android:id/tabcontent">
+
+                            <!-- Este LinearLayout es el primer tab por tanto dentro de este irá el diseño del primer tab-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:id="@+id/tab1">
+
+                                <!--Aqui coloco el fragment-->
+                                <!--el atributo name enlaza el fragment con el MainActivity que seria la clase en java -->
+                                <!--el atributo tools:layout enlaza el diseño con el activity_main que seria el diseño en xml -->
+                                <fragment
+                                    android:id="@+id/FragUno"
+                                    android:name="remmcal_apps.tabsfragments.FragUno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    tools:layout="@layout/fragment_frag_uno" />
+
+                                <fragment
+                                    android:id="@+id/FragDos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:name="layout.FragDos"
+                                    tools:layou="@layout/fragment_frag_dos"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+
+
+
+                            <!-- Este LinearLayout es el segundo tab por tanto dentro de este irá el diseño del segundo tab-->
+                            <!-- a partir de aqui puedo copiar y pegar todo el LinearLayout y adicionar tabs ya que esta dentro del Framelayout
+                             que es el contenedor de los tabs-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/tab2">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Aqui esta en diseño del segundo tab"/>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Boton del Tab2"/>
+                            </LinearLayout>
+
+
+                            <!-- Este LinearLayout es el tercer tab por tanto dentro de este irá el diseño del tercer tab-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/tab3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Aqui esta en diseño del tercer tab"/>
+
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
+                                    android:src="@mipmap/ic_launcher"
+                                    android:layout_gravity="center"
+                                    />
+                            </LinearLayout>
+11
+                    </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+
+</TabHost>
+
+
+
+
+
+</LinearLayout>
