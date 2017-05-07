@@ -29,12 +29,9 @@ Captura
     <center>
         <table border="0">
             <tr>
-                <td><img src="/img/corrida_01.gif" width="250"></td>
-                <td><img src="/img/corrida_02.gif" width="250"></td>
-                <td><img src="/img/corrida_03.gif" width="250"></td>
+                <td><img src="/img/captura.png" width="250"></td>
             </tr>
         </table>
     </center>
 </div>
 <br><br>
-<a href="http://www.miramicodigo.com" target="_blank">@Gusn8</a>
